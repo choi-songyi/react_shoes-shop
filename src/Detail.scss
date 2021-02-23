@@ -1,0 +1,62 @@
+$maincolor: #333;
+
+.red {
+  color: $maincolor;
+}
+.wow-enter {
+  opacity: 0;
+}
+.wow-enter-active {
+  opacity: 1;
+  transition: all 500ms;
+}
+.style {
+  height: 200px;
+  background-color: #eeeeee;
+  line-height: 200px;
+}
+@mixin 함수() {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.my-alert {
+  @include 함수();
+}
+
+.my-alert2 {
+  @extend .my-alert;
+  background-color: #ffe591;
+}
+
+.my-alert3 {
+  @extend .my-alert;
+  background-color: #ffe591;
+  color: $maincolor;
+  width: 100px;
+  height: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  p {
+    border: 1px solid white;
+    padding: 2px;
+    margin: 5px 0;
+  }
+}
+.my-alert p {
+  margin-bottom: 0;
+}
+
+// div.container {
+//   h4 {
+//     color: blue;
+//   }
+//   p {
+//     color: green;
+//   }
+// }
