@@ -35,7 +35,7 @@ function App() {
       </Navbar.Collapse>
     </Navbar>
 
-  <Route exact path="/">
+  <Route exact path="/react_shoes-shop/">
   <Jumbotron className="background">
     <h1>20% Season OFF</h1>
     <p>
