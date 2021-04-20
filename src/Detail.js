@@ -72,7 +72,7 @@ function Detail (props){
             props.dispatch({type:'항목추가', data : {id:찾은상품.id, name:찾은상품.title, quan: 1}});
             history.push('/cart');
           }}>주문하기</button>
-          <button className="btn btn-danger" onClick={()=>{history.push('/')}}>뒤로가기</button>
+          <button className="btn btn-danger" onClick={()=>{history.push('/react_shoes-shop')}}>뒤로가기</button>
         </div>
       </div>
 
